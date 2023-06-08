@@ -1,0 +1,15 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <div >
+    <mat-form-field appearance="fill">
+      <mat-label>NAME</mat-label>
+      <input matInput formControlName="name">
+      <mat-error>missing</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>EMP CODE</mat-label>
+      <input matInput formControlName="empCode">
+      <mat-error>missing</mat-error>
+    </mat-form-field>
+  </div>
+  <button type="submit">Submit</button>
+</form>
